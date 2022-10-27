@@ -1,54 +1,264 @@
-            body {
-                background-color: rgb(197, 211, 236);
-                font-family: Maiandra GD;
-                padding-left: 1%;
-                padding-right: 1%;
-                border: rgb(53, 53, 11) solid 0.5em;
-                border-radius: 5%;
-                border-style: double;
-                font-size: 17px;
-            }
-            
-            img {
-                border-radius: 30%;
-                border: solid 0.2em;
-                border-color: rgb(53, 53, 11);
-                width: 10em;
-            }
-            
-            h1 {
-                color: rgb(53, 53, 11);
-                text-align: center;
-            }
-            
-            a {
-                font-size: 1.2em;
-                color: darkblue;
-            }
-            
-            h2 {
-                font-weight: bold;
-                font-size: 20px;
-                color: rgb(53, 53, 11);
-                background-color: darkcyan;
-                box-shadow: 5px 2.5px 2.5px black;
-                margin-bottom: 5mm;
-            }
-            
-            ul li {
-                font-weight: normal;
-                font-size: 17px;
-            }
-            
-            a:hover {
-                font-weight: bold;
-                font-size: 25px;
-            }
-            
-            p {
-                font-weight: bold;
-            }
-            
-            img:hover {
-                width: 15em;
-            }
+* {
+    font-family: Maiandra GD;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    margin: auto 300px;
+    width: 700px;
+}
+
+.entetes {
+    display: flex;
+    flex-direction: column;
+}
+
+#phoprofil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 3px 5px 3px 2px brown;
+}
+
+.entete1 {
+    display: flex;
+}
+
+.entete1a {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.entete1aa {
+    display: flex;
+    margin: 0px;
+}
+
+.entete1aaa {
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#dev {
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+}
+
+.entete1aa a {
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 18px;
+}
+
+.entete1aa h1 {
+    margin-bottom: 0%;
+}
+
+#liengit {
+    margin-left: 450px;
+}
+
+#divcont {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.comp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.comp .comp1 {
+    width: 47%;
+    border: 1px solid black;
+    margin: 8px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.comp1 nav {
+    margin: 0px;
+    padding: 0px;
+    ;
+}
+
+nav p,
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav h2 {
+    font-size: 35px;
+}
+
+nav p {
+    font-size: 15px;
+}
+
+.comp1 div {
+    margin: 1px;
+    display: flex;
+}
+
+div .nav1 {
+    width: 30%;
+    margin: 20px;
+}
+
+div .nav2 {
+    width: 70%;
+}
+
+.nav1 h2 {
+    font-size: 45px;
+}
+
+.comp .comp1:hover {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0px;
+    box-shadow: 1px 1px 1px mediumseagreen;
+}
+
+.imglangues {
+    width: 50px;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.langues div {
+    border: 1px solid black;
+}
+
+.langues,
+.parcours {
+    display: flex;
+    width: 100%;
+}
+
+.langues div {
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.langues div span {
+    padding: 5px;
+    align-content: center;
+}
+
+.langues :hover {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0px;
+    box-shadow: 1px 1px 1px mediumseagreen;
+}
+
+div h2 {
+    margin: 5px 0;
+}
+
+.parcours div span {
+    font-size: 40px;
+}
+
+.parcours div span:hover {
+    color: olive;
+}
+
+.parcours2 {
+    display: flex;
+    width: 100%;
+}
+
+.parcours2 div {
+    width: 25%;
+    margin: 10px;
+}
+
+.mecontacter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mecontacter .noms {
+    width: 100%;
+}
+
+.mecontacter .noms input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.mecontacter .email input {
+    width: 620px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.mecontacter .objetgenre {
+    display: flex;
+    width: 100%;
+}
+
+.objetgenre select {
+    width: 310px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.mecontacter .message {
+    display: flex;
+    flex-direction: column;
+}
+
+.message textarea {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.message button {
+    color: white;
+    background-color: blue;
+    width: 120px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin: 10px 10px 10px 0;
+}
+
+.message button:hover {
+    background-color: blueviolet;
+}
+
+.message span {
+    color: red;
+    font-size: 14px;
+}
