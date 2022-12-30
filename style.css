@@ -54,6 +54,10 @@ body {
     margin: 10px;
 }
 
+p {
+    text-align: justify;
+}
+
 .contactliengit {
     display: flex;
     flex-direction: row;
@@ -154,6 +158,7 @@ section p {
 }
 
 .parcour {
+    width: 20%;
     margin-right: 15px;
 }
 
@@ -256,7 +261,7 @@ section p {
 }
 
 .message button {
-    width: 15%;
+    width: 100px;
     padding: 15px 20px;
     border-radius: 5px;
     border: 1px solid transparent;
@@ -268,9 +273,101 @@ section p {
     background-color: rgb(112, 188, 218);
 }
 
-@media screen and (min-width :500px) and (max-width:800px) {
+@media screen and (max-width:800px) {
+    .conteneur {
+        width: 600px;
+        margin: 40px auto;
+    }
+    .niveau {
+        width: 45%;
+    }
+    .titre h1 {
+        font-size: 40px;
+        font-weight: lighter;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .conteneur {
+        width: 500px;
+        margin: 40px auto;
+    }
+    .titres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+    .titre div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .niveau {
+        width: 100%;
+    }
+    .langues,
+    .parcours {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .drapeau {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
     .conteneur {
         width: 450px;
-        margin: auto;
+        margin: 20px auto;
+    }
+    .titres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .conteneur {
+        width: 300px;
+        margin: 10px auto;
+    }
+    .titres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+    .parcour {
+        width: 30%;
+    }
+    .objetradio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .objetradio select {
+        width: 300px;
+    }
+    .radio div {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-items: center;
+    }
+    .titre h1 {
+        font-size: 25px;
+        font-weight: lighter;
+        margin: 10px auto;
+    }
+    .titre div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
